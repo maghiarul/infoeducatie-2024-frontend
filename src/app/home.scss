@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --small: 0.8rem;
+  --medium: 1.3rem;
+  --big: 2.5rem;
+  --somewhere-in-between: 1.7rem;
+  --roz: #f76c6c;
+  --space: "Space Grotesk", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --blue: #374785;
+  --gri: #303030;
+}
+
+.SLIDE {
+  height: 100vh;
+}
+
+.FIRST {
+  background-image: url("../assets/images/pattern_first.png");
+}
+
+// .navbar {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin-top: 0.5rem;
+//   .logo {
+//     transform: translateY(5%);
+//   }
+//   .items > * {
+//     margin: auto 15px;
+//     font-family: var(--space);
+//     font-weight: 500;
+//     color: #000;
+//     text-decoration: none;
+//     font-size: var(--medium);
+//     padding: 8px 20px;
+//   }
+//   #auth {
+//     border: 2px solid black;
+//   }
+//   #incepe {
+//     background-color: var(--roz);
+//     color: #fff;
+//   }
+// }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  h1 {
+    font-family: var(--manrope);
+    font-weight: 800;
+    font-size: 4rem;
+  }
+  p {
+    margin-top: 2rem;
+    font-family: var(--space);
+    font-size: 1.5rem;
+    font-weight: 200;
+    width: 50%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .butoane {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    font-family: var(--space);
+    font-weight: 700;
+    a {
+      padding: 15px 20px;
+      width: 255px;
+      text-align: center;
+    }
+    #unu {
+      color: #fff;
+      background-color: var(--roz);
+    }
+    #doi {
+      border: 2px solid black;
+      color: black;
+    }
+  }
+}
+
+.SECOND {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    color: var(--blue);
+    font-family: var(--space);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h1 {
+    font-family: var(--manrope);
+    font-size: var(--big);
+    text-align: center;
+    font-weight: 800;
+    width: 60%;
+    margin-top: 2rem;
+    line-height: 1.5;
+  }
+  h2 {
+    font-family: var(--space);
+    font-weight: 200;
+    margin-top: 1rem;
+    width: 35%;
+    text-align: center;
+  }
+  .exemple {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      height: auto;
+      width: 35%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      object-fit: scale-down;
+    }
+  }
+}
+
+.THIRD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  #t {
+    align-self: flex-start;
+    margin: 1rem 10rem;
+    color: var(--blue);
+    font-family: var(--space);
+    text-transform: uppercase;
+  }
+  h1 {
+    align-self: flex-start;
+    margin: 0rem 10rem;
+    font-family: var(--manrope);
+    font-weight: 800;
+    font-size: var(--big);
+    width: 35%;
+  }
+  .recenzii {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+    margin: 5rem 12.5rem;
+    .recenzie {
+      .recenzie_text {
+        font-family: var(--space);
+        line-height: 1.5;
+        font-size: var(--somewhere-in-between);
+      }
+      .user_recenzie {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .text {
+          margin-left: 1rem;
+          h3 {
+            font-family: var(--manrope);
+            font-weight: 800;
+          }
+          p {
+            font-family: var(--space);
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+}
+
+.FOURTH {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  h1 {
+    font-family: var(--manrope);
+    font-weight: 800;
+    font-size: var(--big);
+    text-align: center;
+    margin: 5rem auto;
+    width: 60%;
+  }
+  a {
+    padding: 15px 20px;
+    width: 250px;
+    text-align: center;
+    background-color: var(--roz);
+    font-family: var(--manrope);
+    font-weight: 800;
+    color: #fff;
+    img {
+      position: relative;
+      top: 3px;
+      right: -5px;
+    }
+  }
+}
+
+// .footer {
+//   width: 100%;
+//   background-color: var(--gri);
+//   display: flex;
+//   flex-direction: column;
+//   color: #fff;
+//   h1 {
+//     font-family: var(--manrope);
+//     font-weight: 900;
+//     margin-bottom: 1rem;
+//     font-size: var(--medium);
+//   }
+//   a {
+//     color: #fff;
+//     font-family: var(--space);
+//     font-weight: 200;
+//     margin: 0.35rem 0rem;
+//     font-size: var(--small);
+//   }
+//   .main-container {
+//     margin: 2rem auto;
+//     display: flex;
+//     .col {
+//       display: flex;
+//       flex-direction: column;
+//       margin: 0rem 2rem;
+//     }
+//   }
+//   .copyright {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     img {
+//       height: auto;
+//       width: 10%;
+//     }
+//     hr {
+//       height: 30px;
+//       margin: 0rem 2.5rem;
+//     }
+//     p {
+//       font-family: var(--space);
+
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 1080px) {
+  .SECOND {
+    margin-bottom: 15rem;
+  }
+  .recenzii {
+    gap: 5rem !important;
+  }
+  .recenzie_text {
+    width: 100%;
+    font-size: 20px !important;
+  }
+}

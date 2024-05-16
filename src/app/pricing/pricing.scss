@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --small: 0.8rem;
+  --medium: 1.3rem;
+  --button-app: 1.2rem;
+  --input-wise: 1rem;
+  --big: 2.5rem;
+  --somewhere-in-between: 1.7rem;
+  --space: "Space Grotesk", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --verde: #0da949;
+  --roz: #f76c6c;
+  --blue: #374785;
+  --gri: #303030;
+  --g-d: #f4f4f4;
+  --g-bg: #fafafa;
+  --galben: #ffc100;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  padding: 4rem 6rem 10rem 6rem;
+  button {
+    margin: 2rem 0rem;
+    padding: 8px 12px;
+    font-family: var(--manrope);
+    font-weight: 900;
+    font-size: var(--button-app);
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    border: 2px solid black;
+    transition: 0.2s;
+  }
+  button:hover {
+    border: 2px solid #fff;
+    background-color: var(--roz);
+    color: #fff;
+  }
+  h1 {
+    font-family: var(--manrope);
+    font-weight: 700;
+    font-size: var(--big);
+  }
+  p {
+    font-family: var(--space);
+    font-weight: 900;
+    .val {
+      font-size: 3rem;
+    }
+    .dol {
+      font-size: 1.35rem;
+      position: relative;
+      top: -17px;
+    }
+    .luna {
+      font-family: var(--manrope);
+      font-weight: 400;
+    }
+  }
+  hr {
+    border: none;
+    background-color: var(--g-d);
+    height: 3px;
+    width: 60%;
+    margin: 1rem 0rem;
+  }
+}
+
+.avantaje {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0rem 7rem;
+  align-items: center;
+}
+.card:nth-child(1) {
+  h1 {
+    color: var(--blue);
+  }
+}
+
+.card:nth-child(2) {
+  h1 {
+    color: var(--roz);
+  }
+}
+.card:nth-child(3) {
+  h1 {
+    color: var(--galben);
+  }
+}
+
+.main {
+  margin: 5rem 0rem;
+  .al {
+    text-align: center;
+    font-family: var(--manrope);
+    font-weight: 900;
+    font-size: var(--big);
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .cards {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card {
+    flex: 1 1 40%;
+    padding: 2rem 2rem 7rem 2rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1440px) {
+  .card {
+    padding: 4rem 4rem 10rem 4rem;
+  }
+}

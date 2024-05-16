@@ -9,16 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@uiw/codemirror-theme-xcode": "^4.22.1",
+    "@uiw/react-codemirror": "^4.22.1",
+    "axios": "^1.6.8",
+    "codemirror": "^6.0.1",
+    "next": "14.1.4",
+    "next-client-cookies": "^1.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "sass": "^1.77.1",
+    "socket.io-client": "^4.7.5"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "typescript": "^5"
   }
 }

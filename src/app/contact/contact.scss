@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --small: 0.8rem;
+  --medium: 1.3rem;
+  --button-app: 1.2rem;
+  --input-wise: 1rem;
+  --big: 2.5rem;
+  --somewhere-in-between: 1.7rem;
+  --roz: #f76c6c;
+  --space: "Space Grotesk", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --blue: #374785;
+  --gri: #303030;
+  --g-d: #f4f4f4;
+  --g-bg: #fafafa;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  h1 {
+    font-family: var(--manrope);
+    font-weight: 800;
+    font-size: var(--big);
+    padding-bottom: 0.5rem;
+  }
+  p {
+    font-family: var(--space);
+    font-weight: 200;
+    line-height: 1.5;
+    width: 40%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  input,
+  textarea {
+    font-family: var(--space);
+    font-weight: 400;
+    font-size: var(--input-wise);
+    border: none;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    background-color: var(--g-d);
+    color: #000;
+    padding: 12px 12px 12px 40px;
+    outline: none;
+    width: 100%;
+  }
+  .can {
+    position: relative;
+    img {
+      position: absolute;
+      left: 15px;
+      top: 22px;
+    }
+  }
+
+  textarea {
+    height: 200px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    .f {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  button {
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 8px 40px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-family: var(--manrope);
+    font-weight: 800;
+    font-size: var(--button-app);
+    border: 2px solid black;
+  }
+}

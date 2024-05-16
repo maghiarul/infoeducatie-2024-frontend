@@ -1,95 +1,101 @@
+"use client";
+
 import Image from "next/image";
-import styles from "./page.module.css";
+import logo from "../assets/images/logo.svg";
+import logo_white from "../assets/images/logo-white.svg";
+import "./home.scss";
+import img1 from "../assets/images/img1.svg";
+import img2 from "../assets/images/img2.svg";
+import recenzie1 from "../assets/images/recenzie1.png";
+import recenzie2 from "../assets/images/recenzie2.jpg";
+import arrow_right from "../assets/images/arrow-right.svg";
+import Navbar from "@/Components/Navbar/Navbar";
+import Footer from "@/Components/Footer/Footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="container">
+      <div className="SLIDE FIRST">
+        <Navbar />
+        <div className="heading">
+          <h1>Învață. Testează. Progresează.</h1>
+          <p>
+            Prime Tech este platforma intuitivă și ușor de utilizat pentru
+            persoanele care doresc să învețe un limbaj de programare într-un
+            mediu interactiv.
+          </p>
+          <div className="butoane">
+            <a href="" id="unu">
+              Începeți acum
+            </a>
+            <a href="" id="doi">
+              Înțelege cum funcționează
+            </a>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="SLIDE SECOND">
+        <p>Cum funcționează</p>
+        <h1>
+          La început , orice utilizator va urmări primele cursuri care vor
+          consta în algoritmi fundamentali și adaptarea unui mod de gândire
+          adecvat,
+        </h1>
+        <h2>
+          ca mai apoi să aplice noțiunile învățate într-unul dintre terminalele
+          noastre.
+        </h2>
+        <div className="exemple">
+          <Image src={img1} alt="img1" />
+          <Image src={img2} alt="img1" />
+        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+      <div className="SLIDE THIRD">
+        <p id="t">Recenzii</p>
+        <h1>Alătură-te unei comunități plină de oportunități și activități.</h1>
+        <div className="recenzii">
+          <div className="recenzie">
+            <p className="recenzie_text">
+              “Am fost plăcut surprins să văd cât de mult am putut avansa în
+              acest domeniu. Bănuiesc că am avut nevoie de un învățător bun,
+              mersi Prime Tech ! “
+            </p>
+            <div className="user_recenzie">
+              <Image src={recenzie1} alt="recenzie1" />
+              <div className="text">
+                <h3>Alina</h3>
+                <p>Student</p>
+              </div>
+            </div>
+          </div>
+          <div className="recenzie">
+            <p className="recenzie_text">
+              “Sunt extrem de încântat de progresul meu în domeniul acesta și nu
+              m-aș fi gândit că pot atinge acest nivel într-un timp atât de
+              scurt. Cred că acest lucru se datorează în mare parte efortului
+              meu, dar și ghidării și suportului continuu oferit de către echipa
+              Prime Tech“
+            </p>
+            <div className="user_recenzie">
+              <Image src={recenzie2} alt="recenzie2"/>
+              <div className="text">
+                <h3>Mihai</h3>
+                <p>Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="SLIDE FOURTH">
+        <h1>
+          Oportunitățile sunt la un click distanță ! Vă invităm să vă alăturați
+          comunității noastre și să explorați platforma noastră gratuită.
+        </h1>
+        <a href="">
+          Incepeti acum <Image src={arrow_right} alt="lol" />
         </a>
       </div>
-    </main>
+      <Footer />
+    </div>
   );
 }

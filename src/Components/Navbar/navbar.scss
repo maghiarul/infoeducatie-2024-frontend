@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --small: 0.8rem;
+  --medium: 1.3rem;
+  --big: 2.5rem;
+  --somewhere-in-between: 1.7rem;
+  --roz: #f76c6c;
+  --space: "Space Grotesk", sans-serif;
+  --manrope: "Manrope", sans-serif;
+  --blue: #374785;
+  --gri: #303030;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+  .logo {
+    transform: translateY(5%);
+  }
+  .items > * {
+    margin: auto 15px;
+    font-family: var(--space);
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    font-size: var(--medium);
+    padding: 8px 20px;
+  }
+  #auth {
+    border: 2px solid black;
+  }
+  .incepe {
+    background-color: var(--roz);
+    color: #fff;
+  }
+  button {
+    border: none;
+    border: 2px solid black;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}

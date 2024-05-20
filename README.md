@@ -2,7 +2,7 @@
 
 ## Descriere
 
-Proiectul a fost realizat cu scop educational venind in ajutorul studentilor sau a oricarui pasionat pentru a invata Javascript.
+Proiectul a fost realizat cu scopul a veni in ajutorul studentilor sau a oricarui pasionat pentru a invata Javascript.
 
 ## Informatii tehnice
 
